@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(90deg, rgba(84,126,185,1) 50%, rgba(215,65,247,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+.login{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 2.5rem;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2rem;
+    width: fit-content;
+    box-shadow: var(--box-shadow);
+}
+.nameDiv, .passDiv{
+    padding: 0.6em;
+}
+#name, #password{
+    margin-top: 5px;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    width: 15rem;
+}
+#name:hover, #password:hover{
+    border: 1px solid black;
+}
+label{
+    opacity: 80%;
+    font-weight: bold;
+}
+.forgot{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -0.8rem;
+    left: 5rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.forgot:hover{
+    color: rgb(141, 139, 139);
+}
+#submit{
+    border: 0;
+    padding: 0.5rem;
+    width: 12rem;
+    border-radius: 25px;
+    color: white;
+    box-shadow: var(--box-shadow);
+    background: rgb(215,65,247);
+    background: linear-gradient(-90deg, rgba(215,65,247,1) 50%, rgba(84,126,185,1) 100%);
+}
+#submit:hover{
+    background: rgb(143, 43, 165);
+}
+#error{
+    font-size: 0.7rem;
+    width: 250px;
+}
+.showError::before{
+    content: "⭕";
+}
+.icons{
+    position: relative;
+    top: 5px;
+    padding: 1rem;
+}
+svg:not(.firstsvg){
+    padding: 5px;
+    width: 1rem;
+}
+svg:not(.firstsvg):hover{
+    fill: rgb(80, 79, 79);
+}
