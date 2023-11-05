@@ -2,6 +2,7 @@ const nameVal = document.getElementById("name")
 const password = document.getElementById("password")
 const error = document.getElementById("error")
 const submit = document.getElementById("submit")
+const checkbox = document.getElementById("checkbox")
 
 submit.addEventListener("click", (e) => {
     let messages = []
@@ -26,4 +27,10 @@ submit.addEventListener("click", (e) => {
     }
     
 })
-
+checkbox.addEventListener("click", () => {
+    if(password.type === "password"){
+        password.type = "text"
+    }else{
+        password.type = "password"
+    }
+})
