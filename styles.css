@@ -2,11 +2,10 @@
 :root{
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 body{
     font-family: 'Lato', sans-serif;
     background: linear-gradient(90deg, rgba(84,126,185,1) 50%, rgba(215,65,247,1) 100%);
-/*     display: flex;
-    justify-content: center; */
     display: grid;
     place-items: center;
     height: 100vh;
@@ -19,6 +18,7 @@ body{
     padding-bottom: 2.5rem;
 }
 form{
+    align-self: center;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -46,17 +46,23 @@ label{
     opacity: 80%;
     font-weight: bold;
 }
-.forgot{
+.forgot, .show{
     position: relative;
     margin: 0;
     padding: 0;
-    top: -0.8rem;
-    left: 5rem;
+    top: -1.6rem;
+    display: inline;
     font-size: 0.7rem;
     cursor: pointer;
 }
+.forgot{
+    left: 4rem;
+}
 .forgot:hover{
     color: rgb(141, 139, 139);
+}
+.show{
+    right: 4rem;
 }
 #submit{
     border: 0;
