@@ -9,7 +9,7 @@ body{
     justify-content: center; */
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 .login{
     padding: 0;
