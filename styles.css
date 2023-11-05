@@ -5,8 +5,11 @@
 body{
     font-family: 'Lato', sans-serif;
     background: linear-gradient(90deg, rgba(84,126,185,1) 50%, rgba(215,65,247,1) 100%);
-    display: flex;
-    justify-content: center;
+/*     display: flex;
+    justify-content: center; */
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 .login{
     padding: 0;
